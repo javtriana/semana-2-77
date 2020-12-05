@@ -1,5 +1,7 @@
 <template>
-  <div>
+
+
+<div>
     <div class="container">
       <section id="team" class="gupo">
         <div class="card-deck">
@@ -7,18 +9,18 @@
             class="card text-center text-white bg-dark"
             style="width: 18rem;"
           >
-            <img
-              src="imagenes/int_01.jpg"
+            <img 
+              :src="image1"
               class="card-img-top"
-              alt="integrante1"
+              alt="error"
             />
+
             <div class="card-body">
-              <h2 class="card-title">Andres Portillo</h2>
-              <h5 class="card-title">Desarrollador Backend</h5>
-              <p class="card-text">
-                Docente, egresado de la Universidad de nariño, 30 años, musica
-                preferida: Rock, Hobby: Entrenamiento Físico
-              </p>
+              <h2 class="card-title">{{nombre1}}</h2>
+
+
+              <h5 class="card-title">{{rol1}}</h5>
+              <p class="card-text">{{desc1}}</p>
             </div>
             <div class="card-footer">
               <small class="text-muted">Last updated 3 mins ago</small>
@@ -70,13 +72,24 @@
       </section>
     </div>
   </div>
+
 </template>
 
 <script>
+import products from "./datos.json";
+
 export default {
-  name: "TeamCard",
-  props: ["member"],
-};
+  name: "hello",
+  data() {
+    return {
+      nombre1: products[0].nombre,
+      desc1: products[0].descripcion,
+      rol1: products[0].rol,
+      image1 : products[0].image
+    }
+  }
+}
+
 </script>
 
 <style scoped></style>
