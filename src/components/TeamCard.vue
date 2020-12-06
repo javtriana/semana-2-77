@@ -13,7 +13,7 @@
               <p class="card-text">{{ desc1 }}</p>
             </div>
             <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <small class="text-muted">codigo: {{ codigo1 }}</small>
             </div>
           </div>
           <div class="card text-center text-white bg-dark" style="width: 18rem">
@@ -24,7 +24,7 @@
               <p class="card-text">{{ desc2 }}</p>
             </div>
             <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <small class="text-muted">codigo: {{ codigo2 }}</small>
             </div>
           </div>
           <div class="card text-center text-white bg-dark" style="width: 18rem">
@@ -35,7 +35,7 @@
               <p class="card-text">{{ desc3 }}</p>
             </div>
             <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <small class="text-muted">codigo: {{ codigo3 }}</small>
             </div>
           </div>
         </div>
@@ -51,16 +51,20 @@ export default {
   name: "hello",
   data() {
     return {
+
+      codigo1: products[0].codigo,
       nombre1: products[0].nombre,
       desc1: products[0].descripcion,
       rol1: products[0].rol,
       image1: products[0].image,
 
+      codigo2: products[1].codigo,
       nombre2: products[1].nombre,
       desc2: products[1].descripcion,
       rol2: products[1].rol,
       image2: products[1].image,
 
+      codigo3: products[2].codigo,
       nombre3: products[2].nombre,
       desc3: products[2].descripcion,
       rol3: products[2].rol,
