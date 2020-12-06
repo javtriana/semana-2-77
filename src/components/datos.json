@@ -1,0 +1,23 @@
+[
+  {
+    "codigo": 1,
+    "nombre": "Andres Portillo",
+    "descripcion": "Docente, egresado de la universidad de nariño, 30 años",
+    "rol": "Desarrollador Frontend",
+    "image": "./imagenes/int_01.jpg"
+  },
+  {
+    "codigo": 2,
+    "nombre": "Gabriel Ardila",
+    "descripcion": "Ingeniero electrónico, egresado de la universidad javeriana",
+    "rol": "Desarrollador Frontend",
+    "image": "./imagenes/int_02.jpg"
+  },
+  {
+    "codigo": 3,
+    "nombre": "Javier Triana",
+    "descripcion": "Ingeniero civil, egresado de la universidad distrital F.J.C, 31 años",
+    "rol": "Desarrollador Backend",
+    "image": "./imagenes/int_03.jpg"
+  }
+]

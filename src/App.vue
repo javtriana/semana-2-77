@@ -1,12 +1,21 @@
 <template>
   <div id="app">
+    <TeamCard> </TeamCard>
   </div>
 </template>
 
 <script>
 
-export default {
-  name: 'App',
-}
-</script>
+import TeamCard from "./components/TeamCard.vue";
 
+export default {
+
+  name: "App",
+  components: {
+    TeamCard,
+  },
+};
+
+
+
+</script>
